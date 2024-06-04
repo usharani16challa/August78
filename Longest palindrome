@@ -1,0 +1,15 @@
+class Solution {
+  public int longestPalindrome(String s){
+    int ans =0;
+    int[] count = new int [128];
+
+    for ( final int c : count )
+      ans += c % 2 == 0 ? c : c - 1;
+
+    final boolean hasOddCount = Arrays.stream(count).anyMatch(c -:
+
+
+    return ans + (hasOddCount ? : 0);
+                                    
+                                                }
+}
